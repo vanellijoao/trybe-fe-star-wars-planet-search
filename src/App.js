@@ -1,13 +1,17 @@
 import React from 'react';
-import StarWarsProvider from './context/StarWarsProvider';
+import Provider from './context/Provider';
 
 import Table from './components/Table';
+import Filter from './components/Filter';
+
+import './styles/Table.css';
 
 function App() {
   return (
-    <StarWarsProvider>
+    <Provider>
+      <Filter />
       <Table />
-    </StarWarsProvider>
+    </Provider>
   );
 }
 
